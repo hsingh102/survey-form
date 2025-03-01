@@ -11,29 +11,29 @@ document.addEventListener("DOMContentLoaded", function () {
         // Validate Email
         if (!isValidEmail("email")) isValid = false;
 
-        // Validate Gender (Radio Buttons)
+        // Validate Gender 
         if (!isChecked("gender")) isValid = false;
 
-        // Validate Interests (Checkbox)
+        // Validate Interests 
         if (!isChecked("interests")) isValid = false;
 
-        // Validate Country Selection (Dropdown)
+        // Validate Country Selection 
         if (!isSelected("country")) isValid = false;
 
-        // Validate Username (Alphanumeric only)
+        // Validate Username 
         if (!isValidPattern("username", /^[a-zA-Z0-9]+$/, "Only alphanumeric characters allowed.")) isValid = false;
 
-        // Validate Date of Birth (DD-MM-YYYY)
+        // Validate Date of Birth 
         if (!isValidPattern("dob", /^\d{2}-\d{2}-\d{4}$/, "Format: DD-MM-YYYY")) isValid = false;
 
-        // Validate Custom ID (ABC-1234 format)
+        // Validate Custom ID 
         if (!isValidPattern("custom-id", /^[A-Z]{3}-\d{4}$/, "Format: ABC-1234")) isValid = false;
 
-        // Validate Age (18-99)
+        // Validate Age 
         if (!isValidAge("age", 18, 99)) isValid = false;
 
         if (!isValid) {
-            event.preventDefault(); // Stop form submission if validation fails
+            event.preventDefault(); 
         }
     });
 

@@ -1,12 +1,12 @@
 body {
     font-family: Arial, sans-serif;
-    background-color: #f4f4f4;
+    background-color: #c43f3f;
     padding: 20px;
 }
 .container {
     max-width: 500px;
     margin: auto;
-    background: white;
+    background: #1e60f0;
     padding: 20px;
     border-radius: 8px;
     box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
@@ -19,7 +19,7 @@ input, select, textarea {
     width: 100%;
     padding: 8px;
     margin-bottom: 10px;
-    border: 1px solid #ccc;
+    border: 1px solid #3b0a76;
     border-radius: 4px;
 }
 button {
@@ -34,6 +34,6 @@ button:hover {
     background-color: #218838;
 }
 .error {
-    color: red;
+    color: rgb(224, 12, 12);
     font-size: 0.8em;
 }
